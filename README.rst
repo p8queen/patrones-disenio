@@ -29,7 +29,7 @@ Uno de los patrones relacionados más directamente es el **singlenton**, dado qu
 Gráfico
 -------
 
-.. image:: raw/master/img/facade.jpg
+.. image:: patrones-disenio/raw/master/img/facade.jpg
    :width: 500 px 
 
 **Facade:** conoce qué clases del subsistema son responsables de una determinada petición, y delega esas peticiones de los clientes a los objetos apropiados del subsistema.
@@ -63,7 +63,7 @@ Se puede utilizar  con el Singlenton y/o Flyweight  cuando se quiera controlar  
 Gráfico
 -------
 
-.. image:: raw/master/img/state.jpg
+.. image:: patrones-disenio/raw/master/img/state.jpg
    :width: 500 px 
 
 **Context:** Define la Interfaz y mantiene una instancia con el estado actual.
@@ -82,7 +82,7 @@ Patrón Strategy
 Gráfico
 -------
 
-.. image:: raw/master/img/strategy.png
+.. image:: patrones-disenio/raw/master/img/strategy.png
 
 Ventajas
 --------
@@ -142,7 +142,7 @@ En el mediador puede generarse un código muy complejo (codigo spaguetti) ,punto
 Gráfico
 --------
 
-.. image:: raw/master/img/mediator.jpg
+.. image:: patrones-disenio/raw/master/img/mediator.jpg
    :width: 400 px 
 
 **Mediator:** Define una interface para comunicarse con los objetos colegas.
