@@ -29,7 +29,7 @@ Uno de los patrones relacionados más directamente es el **singlenton**, dado qu
 Gráfico
 -------
 
-.. image:: img/facade.jpg
+.. image:: raw/master/img/facade.jpg
    :width: 500 px 
 
 **Facade:** conoce qué clases del subsistema son responsables de una determinada petición, y delega esas peticiones de los clientes a los objetos apropiados del subsistema.
@@ -63,7 +63,7 @@ Se puede utilizar  con el Singlenton y/o Flyweight  cuando se quiera controlar  
 Gráfico
 -------
 
-.. image:: img/state.jpg
+.. image:: raw/master/img/state.jpg
    :width: 500 px 
 
 **Context:** Define la Interfaz y mantiene una instancia con el estado actual.
@@ -72,6 +72,36 @@ Gráfico
 
 **ConcreteState:** Cada subclase implementa el comportamiento asociado con un estado del contexto. 
 
+Patrón Strategy
+===============
+
+**Intención:** Define una familia de algoritmos,  los hace intercambiables en tiempos de ejecución. Permite que un algoritmo varie independientemente de los clientes que lo usan. 
+
+**Motivación:** Estructurar una familia de algoritmos de modo que sus clientes puedan intercambiarlos en tiempo de ejecución. Este patrón encapsula algoritmos.
+
+Gráfico
+-------
+
+.. image:: raw/master/img/strategy.png
+
+Ventajas
+--------
+
+Aumenta cohesión del cliente. 
+Factoriza aspectos comunes de una familia de algoritmos y utilizarlos en las clases base de la jerarquía.
+Sistematiza el uso de implementaciones alternativas 
+
+Desventajas
+-----------
+
+Menor eficiencia. Aumenta el número de objetos creados. 
+
+El cliente es el responsable de crear estrategias, por tanto debe comprender las posibilidades que estas ofrecen. 
+
+Patrones relacionados
+----------------------
+
+Se puede utilizar  con el Singlenton y/o Flyweight  cuando se quiera controlar  las existencias de instancias de cada estrategia
 
 State vs Strategy
 ==================
