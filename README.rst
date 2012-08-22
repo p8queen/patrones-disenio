@@ -117,5 +117,39 @@ En otras palabras, lo que cambia es como se hace. Este patrón usualmente permit
 la implementación específica (la estrategia) se pueda seleccionar por configuración, 
 por el estado de cierto objeto, etc.
 
+Patrón Mediator
+================
 
+**Intención:** Simplificar la comunicación entre los objetos de un sistema introduciendo un único objeto que gestiona la distribución de mensajes entre los otros. 
+
+**Motivación:** Cuando muchos objetos interactúan con otros objetos, se puede formar una estructura muy compleja, con objetos con muchas conexiones con otros objetos. 
+En un caso extremo cada objeto puede conocer a todos los demás objetos. Para evitar esto el patrón Mediator encapsula el comportamiento de todo un conjunto de objetos en un solo objeto 	.
+
+Ventajas
+--------
+
+- Evita crear subclases 
+- Desacopla a los colegas 
+- Abstrae el cómo cooperan los objetos 
+- Centraliza el control en el mediador: clase difícil de mantener 
+
+
+Desventajas
+------------
+
+En el mediador puede generarse un código muy complejo (codigo spaguetti) ,punto de errores. 
+
+Gráfico
+--------
+
+.. image:: raw/master/img/mediator.jpg
+   :width: 400 px 
+
+**Mediator:** Define una interface para comunicarse con los objetos colegas.
+
+**MediatorConcreto:** Implementa el comportamiento cooperativo entre los colegas (como se comunican entre ellos). Además los conoce y mantiene.
+
+**Colegas:** Cada colega conoce su mediador, y usa a este para comunicarse con otros colegas.
+
+**Colaboraciones:** Los colegas envían y reciben requerimientos (requests) de un objeto mediador. El mediador implementa como se comunican los colegas.    
 
